@@ -1,0 +1,166 @@
+@import "variables";
+header {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-family: $fontprincipal;
+  .contenedor {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    .logo {
+      margin: 10px 243px 10px 16px;
+    }
+    .ch-menu {
+      display: none;
+    }
+    label span:first-child {
+      -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+    }
+    label span:nth-last-child(2) {
+      -webkit-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+    }
+    .ch-menu:checked ~ .menu {
+      height: auto;
+      display: block;
+    }
+    .ch-menu:checked ~ label span {
+      opacity: 1;
+      -webkit-transform: rotate(45deg) translate(-7px, -10px);
+      -ms-transform: rotate(45deg) translate(-7px, -10px);
+      transform: rotate(45deg) translate(-7px, -10px);
+    }
+    .ch-menu:checked ~ label span:nth-last-child(3) {
+      opacity: 0;
+      -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+      -ms-transform: rotate(0deg) scale(0.2, 0.2);
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    .ch-menu:checked ~ label span:nth-last-child(2) {
+      -webkit-transform: rotate(-45deg) translate(-1px, 4px);
+      -ms-transform: rotate(-45deg) translate(-1px, 4px);
+      transform: rotate(-45deg) translate(-1px, 4px);
+    }
+    label {
+      padding: 0px 19px 16px 0;
+      height: 12px;
+      span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        margin-bottom: 3px;
+        background: #000;
+        z-index: 1;
+        -webkit-transform-origin: 3px 0px;
+        -ms-transform-origin: 3px 0px;
+        transform-origin: 3px 0px;
+      }
+    }
+    .menu {
+      background-color: $color-principal;
+      color: $blanco;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: none;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 16px;
+      }
+      li {
+        height: 28px;
+        margin: 24px 0px 24px 16px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: $blanco;
+        }
+        a:hover {
+          text-decoration: line-through;
+          color: $azulaguamarina;
+        }
+        a:active {
+          text-decoration: line-through;
+          color: rgba(6, 10, 36, 0.56);
+        }
+      }
+      li:first-child {
+        margin: 16px 0px 24px 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+}
+@media (min-width: 769px) {
+  header {
+    .contenedor {
+      label {
+        display: none;
+      }
+      .logo {
+        height: 36px !important;
+        width: 36px !important;
+        margin: 22px 10px 22px 100px;
+      }
+
+      .menu {
+        margin: 0;
+        padding: 0;
+        -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+        background-color: $blanco;
+        color: $azulfont;
+        display: block;
+        ul {
+          margin: 0;
+          padding: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+        }
+        li {
+          display: block;
+          text-decoration: none;
+          margin: 26px 48px 26px 0px;
+          a {
+            color: $azulfont;
+          }
+        }
+        li:first-child {
+          margin: 26px 48px 26px 0px;
+        }
+        li:last-child {
+          margin: 26px 100px 26px 0px;
+        }
+      }
+    }
+  }
+}

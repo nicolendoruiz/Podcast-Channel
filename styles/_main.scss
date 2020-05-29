@@ -1,0 +1,204 @@
+@import "variables";
+
+main {
+  h1,
+  h2 {
+    font-size: 36px;
+    font-family: $fontsans;
+  }
+  .section-principal {
+    color: $azulfont;
+    h1 {
+      margin: 29px 16px 0px 16px;
+      letter-spacing: 0;
+      line-height: 42px;
+      .texto-principal {
+        display: block;
+      }
+      .world {
+        text-decoration: line-through;
+      }
+    }
+    p {
+      font-family: $fontprincipal;
+      margin: 16px 16px 36px 16px;
+      font-size: 14px;
+      text-align: justify;
+      letter-spacing: 0;
+      line-height: 22px;
+    }
+    button {
+      @include estilo-button( #0000fe,#00f0b8);
+      font-size: 16px;
+      margin: 0px 16px 24px 16px;
+      width: 288px;
+      height: 48px;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 22px;
+    }
+  }
+  .section-episodios {
+    position: relative;
+    padding: 0 0 143.5px 0;
+    .episodios-background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-image: -o-linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+      background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+      transform: skewY(-5deg);
+      transform-origin: right;
+    }
+    h2 {
+      position: relative;
+      color: $blanco;
+      margin: 0;
+      z-index: 2;
+      padding: 64px 147px 21px 16px;
+    }
+    .contenedor-iframe {
+      display: grid;
+      width: 100%;
+      .iframe-spotify {
+        position: relative;
+        padding: 0 11px 11px 11px;
+        width: 100%;
+        margin: 0;
+        iframe {
+          position: relative;
+          z-index: 2;
+          border: 0;
+          border-radius: 5px;
+          width: 100%;
+          margin: 0;
+          height: 232px;
+        }
+      }
+    }
+  }
+  .section-nosotros {
+    z-index: 1;
+    color: $azulfont;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    .img-celular {
+      z-index: 3;
+      margin-top: -95.5px;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: 360px;
+      height: 519px;
+    }
+    h2 {
+      font-family: $fontsans;
+      margin: 27px 16px 8px 16px;
+      letter-spacing: 0;
+      line-height: 42px;
+    }
+    p {
+      font-family: $fontprincipal;
+      margin: 0 16px 0px 16px;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0;
+    }
+  }
+  .section-entrevistas {
+    h2 {
+      margin: 54px 16px 14px 16px;
+      letter-spacing: 0;
+      line-height: 42px;
+    }
+    .contenedor-imagenes {
+      margin: 0;
+      padding: 0;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+      .img-invitada {
+        width: 100%;
+      }
+    }
+  }
+  .section-topicos {
+    color: $azulfont;
+    font-family: $fontsans;
+    h2 {
+      margin: 48px 16px 37px 16px;
+      letter-spacing: 0;
+      line-height: 42px;
+    }
+    .contenedor-topicos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      .topico {
+        width: 100%;
+        img {
+          margin: 0;
+          padding: 13px 108px;
+        }
+        p {
+          font-size: 24px;
+          margin: 13px 16px 36px 16px;
+          text-align: center;
+          line-height: 32px;
+          letter-spacing: 0;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .section-novedades {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .novedades-background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-image: linear-gradient(#0000ff, #0000a3);
+      transform: skewY(-5deg);
+      transform-origin: right;
+    }
+    h2 {
+      position: relative;
+      margin: 0;
+      padding: 64px 16px 0 16px;
+      text-align: center;
+      line-height: 42px;
+      color: $blanco;
+    }
+    button {
+      position: relative;
+      padding: 13px 43px;
+      width: 288px;
+      height: 48px;
+      margin: 36px 16px 67px 16px;
+      @include estilo-button( #0000fe,#00f0b8);
+    }
+  }
+}

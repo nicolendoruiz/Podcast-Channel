@@ -1,0 +1,251 @@
+@import "variables";
+
+@media (min-width: 1024px) {
+  main {
+    h1 {
+      font-size: 64px;
+    }
+    h2 {
+      font-size: 48px;
+    }
+    .section-principal {
+      h1 {
+        margin: 120px 0 0 200px;
+        .texto-principal {
+          display: inline-block;
+        }
+        .punto {
+          color: $color-principal;
+        }
+      }
+      p {
+        text-align: justify;
+        font-size: 16px;
+        width: 628px;
+        margin: 16px 16px 56px 200px;
+        span {
+          margin: 0 0 0 5px;
+          display: inline-flex;
+        }
+      }
+      button {
+        font-size: 18px;
+        padding: 16px 56px;
+        width: 226px;
+        height: 56px;
+        margin: 0px 0px 5px 200px;
+      }
+    }
+    .section-episodios {
+      padding: 0 0 232.6px 0;
+      height: 1042.6px;
+      .episodios-background {
+        transform: skewY(-4deg);
+        transform-origin: right;
+      }
+      h2 {
+        margin: 0;
+        padding: 186px 0px 26px 200px;
+        font-size: 48px;
+      }
+      .contenedor-iframe {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        .iframe-spotify {
+          iframe {
+            margin: 11px;
+          }
+        }
+        div:nth-child(1) {
+          padding: 0 72px 72px 100px;
+        }
+        div:nth-child(3) {
+          padding: 0 72px 0 100px;
+        }
+        div:nth-child(2) {
+          padding: 0 100px 72px 0;
+        }
+        div:nth-child(4) {
+          padding: 0 100px 0 0;
+        }
+      }
+    }
+    .section-nosotros {
+      flex-direction: row;
+      .img-celular {
+        height: 660px;
+        width: 457.6px !important;
+        margin-top: -33.8px;
+        margin-left: 200px;
+        margin-right: 0;
+      }
+      h2 {
+        margin: 120.4px 16px 24px 62.4px;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 256px 0px 62.4px;
+      }
+    }
+    .section-entrevistas {
+      h2 {
+        margin: 64px 16px 36px 200px;
+      }
+      .contenedor-imagenes {
+        -ms-grid-columns: (1fr), 3;
+        grid-template-columns: repeat(3, 1fr);
+        -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+      .contenedor-imagenes > *:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      .contenedor-imagenes > *:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+      }
+      .contenedor-imagenes > *:nth-child(3) {
+        grid-row: 1;
+        grid-column: 3;
+      }
+      .contenedor-imagenes > *:nth-child(4) {
+        grid-row: 2;
+        grid-column: 1;
+      }
+      .contenedor-imagenes > *:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2;
+      }
+      .contenedor-imagenes > *:nth-child(6) {
+        grid-row: 2;
+        grid-column: 3;
+      }
+    }
+    .section-topicos {
+      h2 {
+        margin: 64px 16px 56px 200px;
+      }
+      .contenedor-topicos {
+        flex-direction: row;
+        align-items: start;
+        .topico {
+          width: 260px;
+          img {
+            padding: 13px 78px;
+          }
+        }
+      }
+    }
+    .section-novedades {
+      h2 {
+        padding: 213px 0 0 0;
+      }
+      button {
+        width: 345px;
+        height: 56px;
+        font-size: 18px;
+        margin: 36px 0 151px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  main {
+    .section-principal {
+      h1 {
+        margin: 60px 0 0 100px;
+        .texto-principal {
+          display: inline-block;
+        }
+      }
+      p {
+        margin: 16px 60px 56px 100px;
+      }
+      button {
+        margin: 0px 0px 5px 100px;
+      }
+    }
+    .section-episodios {
+      h2 {
+        width: 100%;
+        padding: 80px 0 26px 100px;
+      }
+      .contenedor-iframe {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+    }
+    .section-nosotros {
+      .img-celular {
+        margin-left: 200px;
+        margin-right: 0;
+      }
+      h2 {
+        margin: 27px 16px 24px 100px;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 100px 0px 100px;
+      }
+    }
+    .section-entrevistas {
+      .contenedor-imagenes {
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        -ms-grid-rows: (1fr), 3;
+        grid-template-rows: repeat(3, 1fr);
+      }
+      .contenedor-imagenes > *:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      .contenedor-imagenes > *:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+      }
+      .contenedor-imagenes > *:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1;
+      }
+      .contenedor-imagenes > *:nth-child(4) {
+        grid-row: 2;
+        grid-column: 2;
+      }
+      .contenedor-imagenes > *:nth-child(5) {
+        grid-row: 3;
+        grid-column: 1;
+      }
+      .contenedor-imagenes > *:nth-child(6) {
+        grid-row: 3;
+        grid-column: 2;
+      }
+    }
+    .section-novedades {
+      h2 {
+        padding: 100px 0 0 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1420px) {
+  main {
+    .section-nosotros {
+      h2 {
+        margin: 100px 0 24px 30px;
+      }
+      p {
+        margin: 0 50px 0px 30px;
+      }
+    }
+    .section-novedades {
+      button {
+        margin: 36px 0 151px 0;
+      }
+    }
+  }
+}

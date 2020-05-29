@@ -1,0 +1,21 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:wght@100;300&family=IBM+Plex+Serif:ital@0;1&display=swap');
+
+
+$color-principal: #0000EC !default;
+$blanco: #FFFFFF;
+$azulfont:#060A24;
+$azulaguamarina:#00F3BB;
+$fontprincipal: 'IBM Plex Mono', monospace;
+$fontsans: 'IBM Plex Sans', sans-serif;
+
+@mixin estilo-button($colorhover,$colorhoverdos) {
+    font-family: $fontprincipal;
+    background: $azulaguamarina;
+    font-weight: 500;
+    border:0;
+    &:hover {
+        background: -o-linear-gradient(225deg,$colorhover 0%,$colorhoverdos 100%);
+        background: linear-gradient(225deg,$colorhover 0%,$colorhoverdos 100%);
+    }
+  }
