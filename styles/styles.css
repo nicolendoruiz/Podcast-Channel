@@ -354,7 +354,7 @@ main .section-novedades {
     height: 56px;
     margin: 0px 0px 5px 200px; }
   main .section-episodios {
-    padding: 0 0 232.6px 0;
+    padding: 0 0 168.6px 0;
     height: 1042.6px; }
     main .section-episodios .episodios-background {
       transform: skewY(-4deg);
@@ -368,15 +368,15 @@ main .section-novedades {
       grid-template-columns: 50% 50%;
       grid-template-rows: 50% 50%; }
       main .section-episodios .contenedor-iframe .iframe-spotify iframe {
-        margin: 11px; }
+        margin: 0; }
       main .section-episodios .contenedor-iframe div:nth-child(1) {
-        padding: 0 72px 72px 100px; }
+        padding: 0 36px 72px 100px; }
       main .section-episodios .contenedor-iframe div:nth-child(3) {
-        padding: 0 72px 0 100px; }
+        padding: 0 36px 0 100px; }
       main .section-episodios .contenedor-iframe div:nth-child(2) {
-        padding: 0 100px 72px 0; }
+        padding: 0 100px 72px 36px; }
       main .section-episodios .contenedor-iframe div:nth-child(4) {
-        padding: 0 100px 0 0; }
+        padding: 0 100px 0 36px; }
   main .section-nosotros {
     flex-direction: row; }
     main .section-nosotros .img-celular {
